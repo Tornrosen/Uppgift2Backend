@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Uppgift2.fddafef7.css">
+    <title>Lägg till jobb</title>
+</head>
+<body>
+    <header>
+        <div class="flexContainer"><h1>Arbetslivserfarenhet</h1>
+            <button class="menuBtn open" id="openMenu">
+                <span class="menuIcon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span></span>
+                <span class="menuText">Meny</span>
+            </button>
+            <nav id="navMenu">
+                <button class="menuBtn close" id="closeMenu">
+                    <span class="menuIcon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menuText">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="/index.html">Startsida</a></li>
+                    <li><a href="/add.html" class="here">Lägg till jobb</a></li>
+                    <li><a href="/about.html">Om webbplatsen</a></li>
+                </ul>
+            </nav>
+        <nav>
+            <ul id="headMenu">
+                <li><a href="/index.html">Startsida</a></li>
+                    <li><a href="/add.html" class="here">Lägg till jobb</a></li>
+                    <li><a href="/about.html">Om webbplatsen</a></li>
+            </ul>
+        </nav></div></header>
+        <main><h2>Lägg till jobb</h2>
+            <div id="formContainer">
+                <form id="form">
+                  <div class="form"><label for="title">Titel: </label><input type="text" id="title"></div>
+                  <div class="form"><label for="workplace">Arbetsplats: </label><input type="text" id="workplace"></div>
+                  <div class="form"><label for="employer">Arbetsgivare: </label><input type="text" id="employer"></div>
+                  <div class="form"><label for="startdate">Startdatum: </label><input type="text" id="startdate"></div>
+                  <div class="form"><label for="enddate">Slutdatum: </label><input type="text" id="enddate"></div>
+                  <div class="form"><label for="description">Beskrivning: </label><input type="text" id="description"></div>
+                  <div class="form"><input type="submit" id="submitBtn" value="Spara jobb!"></div>
+                </form>
+              </div></main>
+        <footer><p class="footerContent">Anna Danielsson, Webbutvecklingsprogrammet</p></footer>
+<script src="/Uppgift2.b828852a.js" type="module"></script>   
+</body>
+</html>

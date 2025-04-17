@@ -1,0 +1,194 @@
+body {
+  color: #deb887;
+  background-color: #fff8dc;
+  margin: 0 auto;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+footer, header {
+  color: linen;
+  text-align: center;
+  background-color: #006400;
+  border: 3px double brown;
+  border-radius: 2px;
+  padding: 1%;
+}
+
+h2, p {
+  text-align: center;
+  padding: 1%;
+}
+
+#aboutText {
+  max-width: 70ch;
+  margin: 0 auto;
+  line-height: 1.3em;
+}
+
+#headMenu {
+  width: 500px;
+  list-style-type: none;
+
+  & li {
+    padding: 3%;
+    display: inline-block;
+
+    & a {
+      color: linen;
+      padding: 10px;
+      text-decoration: none;
+    }
+  }
+}
+
+#navMenu li a {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+form.form {
+  display: table;
+}
+
+#formContainer {
+  justify-content: center;
+  display: flex;
+}
+
+div.form {
+  display: table-row;
+}
+
+label, input {
+  margin-bottom: 10px;
+  display: table-cell;
+}
+
+label {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#submitBtn {
+  color: linen;
+  background-color: #006400;
+  margin: 10px;
+  padding: 7px;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  font-weight: bold;
+}
+
+.flexContainer {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#navMenu, .menuBtn {
+  display: none;
+}
+
+.here {
+  border: 3px double brown;
+  border-radius: 2px;
+}
+
+main {
+  background-color: #8b0000;
+  border: 5px solid #deb887;
+  border-radius: 2px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (width <= 1024px) {
+  #headMenu {
+    display: none;
+  }
+
+  #navMenu li a {
+    display: inline;
+  }
+
+  .menuBtn {
+    color: linen;
+    background-color: #006400;
+    border: double brown;
+    align-items: center;
+    padding: 8px 15px;
+    font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+    font-weight: bold;
+    display: flex;
+  }
+
+  .open {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .close {
+    position: absolute;
+    top: 50%;
+    right: 27%;
+  }
+
+  .bars {
+    background-color: linen;
+    width: 20px;
+    height: 3px;
+    margin: 5px 3px;
+    display: block;
+  }
+
+  .cross1 {
+    width: 20px;
+    position: relative;
+    top: 5px;
+    transform: rotate(45deg);
+  }
+
+  .cross2 {
+    width: 20px;
+    position: relative;
+    top: -3px;
+    transform: rotate(135deg);
+  }
+
+  #navMenu {
+    background-color: #006400;
+    width: 200px;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1em;
+    list-style-type: none;
+  }
+
+  li {
+    width: 100%;
+    padding: .8em;
+  }
+
+  a:link, a:visited {
+    color: linen;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=Uppgift2.fddafef7.css.map */
