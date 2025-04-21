@@ -27,19 +27,19 @@ function showJobs(jobs) {
         jobListEl.innerHTML += `<article><h3>${job.title} på ${job.workplace}</h3><p>Arbetsgivare: ${job.employer}.
         Startdatum: ${job.startdate}. Slutdatum: ${job.enddate}. <br>Beskrivning: ${job.description}</p>
         <input type="button" class="deleteBtn" value="Ta bort jobb"></article>`;
-        /*let id= job.id;
+        let id= job.id;
         let deleteBtnEl = document.querySelector(".deleteBtn");
-        deleteBtnEl.addEventListener("click", () => deleteJob(id));*/
+        deleteBtnEl.addEventListener("click", ()=> deleteJob(id));
     })
 }
 }
 
 //Skapa funktion för att ta bort jobb
 
-/*function deleteJob(id) {
-    fetch('http://127.0.0.1:3000/api/jobs/:' + id, {
-    method: 'DELETE',
-  })
-  .then(res => res.json()) 
-  .then(res => console.log(res))
-}*/
+
+ async function deleteJob(id) {
+
+    return fetch("http://127.0.0.1:3000/api/jobs/:"+id, {
+        method: 'DELETE',
+    }).then(response => response.json())
+}

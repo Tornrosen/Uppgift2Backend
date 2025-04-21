@@ -160,11 +160,11 @@
       });
     }
   }
-})({"hk2ZT":[function(require,module,exports,__globalThis) {
+})({"8fujz":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 62134;
+var HMR_SERVER_PORT = 62906;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -688,18 +688,18 @@ function showJobs(jobs) {
         jobListEl.innerHTML += `<article><h3>${job.title} p\xe5 ${job.workplace}</h3><p>Arbetsgivare: ${job.employer}.
         Startdatum: ${job.startdate}. Slutdatum: ${job.enddate}. <br>Beskrivning: ${job.description}</p>
         <input type="button" class="deleteBtn" value="Ta bort jobb"></article>`;
-    /*let id= job.id;
+        let id = job.id;
         let deleteBtnEl = document.querySelector(".deleteBtn");
-        deleteBtnEl.addEventListener("click", () => deleteJob(id));*/ });
-} //Skapa funktion för att ta bort jobb
- /*function deleteJob(id) {
-    fetch('http://127.0.0.1:3000/api/jobs/:' + id, {
-    method: 'DELETE',
-  })
-  .then(res => res.json()) 
-  .then(res => console.log(res))
-}*/ 
+        deleteBtnEl.addEventListener("click", ()=>deleteJob(id));
+    });
+}
+//Skapa funktion för att ta bort jobb
+async function deleteJob(id) {
+    return fetch("http://127.0.0.1:3000/api/jobs/:" + id, {
+        method: 'DELETE'
+    }).then((response)=>response.json());
+}
 
-},{}]},["hk2ZT","jVEom"], "jVEom", "parcelRequire3fa9", {})
+},{}]},["8fujz","jVEom"], "jVEom", "parcelRequire3fa9", {})
 
 //# sourceMappingURL=Uppgift2.e3f46173.js.map

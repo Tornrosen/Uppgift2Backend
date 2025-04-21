@@ -160,11 +160,11 @@
       });
     }
   }
-})({"wKm44":[function(require,module,exports,__globalThis) {
+})({"9cUVU":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 62134;
+var HMR_SERVER_PORT = 62906;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -701,6 +701,6 @@ async function addJob() {
     console.log(data);
 }
 
-},{}]},["wKm44","rOGr2"], "rOGr2", "parcelRequire3fa9", {})
+},{}]},["9cUVU","rOGr2"], "rOGr2", "parcelRequire3fa9", {})
 
 //# sourceMappingURL=add.bde1fdf4.js.map
