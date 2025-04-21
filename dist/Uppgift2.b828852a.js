@@ -160,11 +160,11 @@
       });
     }
   }
-})({"93v64":[function(require,module,exports,__globalThis) {
+})({"h9SSl":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 62134;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -668,6 +668,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"lhpGb":[function(require,module,exports,__globalThis) {
 "use strict";
+//skapa variabler och händelselyssnare för hamburgermeny
 let openBtn = document.getElementById("openMenu");
 let closeBtn = document.getElementById("closeMenu");
 openBtn.addEventListener("click", toggleMenu);
@@ -685,6 +686,6 @@ closeBtn.addEventListener("click", toggleMenu);
     else navMenuEl.style.display = "none";
 }
 
-},{}]},["93v64","lhpGb"], "lhpGb", "parcelRequire3fa9", {})
+},{}]},["h9SSl","lhpGb"], "lhpGb", "parcelRequire3fa9", {})
 
 //# sourceMappingURL=Uppgift2.b828852a.js.map

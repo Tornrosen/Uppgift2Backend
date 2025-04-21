@@ -1,5 +1,6 @@
 "use strict";
 
+//skapa variabler och händelselyssnare för hamburgermeny
 let openBtn = document.getElementById("openMenu");
 let closeBtn = document.getElementById("closeMenu");
 
@@ -25,3 +26,11 @@ function toggleMenu() {
         navMenuEl.style.display = "none";
     }
 }
+
+
+
+
+
+
+
+
