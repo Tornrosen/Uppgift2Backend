@@ -160,11 +160,11 @@
       });
     }
   }
-})({"9cUVU":[function(require,module,exports,__globalThis) {
+})({"5XUGT":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 62906;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -668,20 +668,27 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"rOGr2":[function(require,module,exports,__globalThis) {
 "use strict";
-//skapa variabler för att lägga till jobb samt ansluta till API
+//skapa variabler för att lägga till jobb, kolla input samt ansluta till API
 let url = "http://127.0.0.1:3000/api/jobs";
 let submitBtnEl = document.querySelector("#submitBtn");
-//skapa händelsehanterare för att lägga till jobb
+let descriptionEl = document.querySelector("#description");
+let errorSpaceEl = document.querySelector("#errorSpace");
+let title = document.querySelector("#title").value;
+let workplace = document.querySelector("#workplace").value;
+let employer = document.querySelector("#employer").value;
+let startdate = document.querySelector("#startdate").value;
+let enddate = document.querySelector("#enddate").value;
+let description = document.querySelector("#description").value;
+//skapa händelsehanterare för att lägga till jobb och kolla input
 submitBtnEl.addEventListener("click", addJob);
+//descriptionEl.addEventListener("keyup", checkInput);
+//funktion för att kontrollera längd på input
+/*function checkInput() {
+    if(title.length<1)
+        {errorSpaceEl.innerHTML= "Fyll i alla textfält!";}
+    else {errorSpaceEl.innerHTML='';}
+}*/ //funktion för att lägga till jobb
 async function addJob() {
-    let title = document.querySelector("#title").value;
-    let workplace = document.querySelector("#workplace").value;
-    let employer = document.querySelector("#employer").value;
-    let startdate = document.querySelector("#startdate").value;
-    let enddate = document.querySelector("#enddate").value;
-    let description = document.querySelector("#description").value;
-    let errorSpaceEl = document.querySelector("#errorSpace");
-    if (title === "" || workplace === "" || employer === "" || startdate === "" || enddate === "" || description === "") errorSpaceEl.innerHTML = "<p>Fyll i alla textf\xe4lt!</p>";
     let job = {
         title: title,
         workplace: workplace,
@@ -701,6 +708,6 @@ async function addJob() {
     console.log(data);
 }
 
-},{}]},["9cUVU","rOGr2"], "rOGr2", "parcelRequire3fa9", {})
+},{}]},["5XUGT","rOGr2"], "rOGr2", "parcelRequire3fa9", {})
 
 //# sourceMappingURL=add.bde1fdf4.js.map
