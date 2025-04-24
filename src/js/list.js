@@ -7,6 +7,14 @@ let url = "http://127.0.0.1:3000/api/jobs";
 window.onload = () => {
     getJobs();
 }
+//Skapa funktion för att ta bort jobb
+
+async function deleteJob(id) {
+
+    return fetch("http://127.0.0.1:3000/api/jobs/:"+id, {
+        method: 'DELETE',
+    }).then(response => response.json())
+}
 
 //funktion för att hämta jobb 
 
@@ -19,7 +27,7 @@ async function getJobs() {
 }
 
 //funktion för att skriva ut jobb till DOM
-function showJobs(jobs) {
+async function showJobs(jobs) {
     const jobListEl = document.querySelector("#jobList");
     jobListEl.innerHTML = "";
     if(jobListEl) {
@@ -32,12 +40,5 @@ function showJobs(jobs) {
 }
 }
 
-//Skapa funktion för att ta bort jobb
 
-async function deleteJob(id) {
-
-    return fetch("http://127.0.0.1:3000/api/jobs/:"+id, {
-        method: 'DELETE',
-    }).then(response => response.json())
-}
 
